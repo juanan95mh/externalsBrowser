@@ -14,7 +14,7 @@ def open_in_rabbitvcs(path):
 	subprocess.run(cmd)
 
 def main():
-	path = "/home/vcs/00_REPO_SVN/B65"
+	path = "/home/vcs/REPO"
 	externals = get_svn_externals(path)
 	for i, external in enumerate(externals, start=1):
 		print(f"{i}. {external}")
